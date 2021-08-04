@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import type { Page } from 'playwright';
+import type { Page } from '@playwright/test';
 declare type NavigationOptions = {
     timeout?: number;
     url?: string | RegExp | ((url: URL) => boolean);
@@ -22,9 +22,9 @@ declare type ClickOptions = {
 export declare class BasePage {
     readonly page: Page;
     constructor(page: Page);
-    getAllElements(selector: string): Promise<import("playwright").ElementHandle<HTMLElement | SVGElement>[]>;
-    clickAndWaitForNavigation(selector: string, navigationOptions?: NavigationOptions, clickOptions?: ClickOptions): Promise<[import("playwright").Response | null, void]>;
-    clickAndWaitForDownload(selector: string): Promise<[import("playwright").Download, void]>;
+    getAllElements(selector: string): Promise<import("@playwright/test").ElementHandle<HTMLElement | SVGElement>[]>;
+    clickAndWaitForNavigation(selector: string, navigationOptions?: NavigationOptions, clickOptions?: ClickOptions): Promise<[import("@playwright/test").Response | null, void]>;
+    clickAndWaitForDownload(selector: string): Promise<[import("@playwright/test").Download, void]>;
     testUrl(expectedUrl: string): Promise<string>;
     testPageTitle(expectedTitle: string): Promise<string>;
     testElementText(expectedUrl: string): Promise<string>;
