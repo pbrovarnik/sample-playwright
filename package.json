@@ -1,5 +1,5 @@
 {
-	"name": "@atreo-inc/hydra",
+	"name": "@pbrovarnik/sample-playwright",
 	"version": "1.0.0",
 	"description": "An end-to-end automation framework built using Playwright.",
 	"main": "dist/index.js",
