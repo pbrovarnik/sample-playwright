@@ -1,0 +1,24 @@
+{
+	"name": "@atreo-inc/hydra",
+	"version": "1.0.0",
+	"description": "An end-to-end automation framework built using Playwright.",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rm -rf dist && tsc"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"devDependencies": {
+		"typescript": "^4.3.5"
+	},
+	"dependencies": {
+		"@playwright/test": "^1.13.1",
+		"playwright": "^1.13.1",
+		"tslib": "^2.3.0"
+	}
+}
